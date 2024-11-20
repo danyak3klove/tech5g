@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виклики та проблеми безпеки 5G</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            background-image: url('path/to/your/background.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+            color: #38a39c;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        button {
+            background-color: #38a39c;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #1c5955;
+        }
+
+        button:hover::after {
+            transform: translateX(0);
+        }
+
+        .block {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .block.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .block h2 {
+            color: #38a39c;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .block p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .block ul {
+            margin-left: 30px;
+            list-style-type: square;
+        }
+
+        .block ul li {
+            font-size: 18px;
+        }
+
+        .block img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Виклики та проблеми безпеки 5G</h1>
+
+    <!-- Навігація -->
+    <nav>
+        <a href="index.html"><button>Головна</button></a>
+        <a href="tech.html"><button>Технічні характеристики та швидкість</button></a>
+        <a href="short.html"><button>Низька затримка</button></a>
+        <a href="IoT.html"><button>Інтернет речей (IoT)</button></a>
+        <a href="новіЧастоти.html"><button>Нові частотні діапазони</button></a>
+        <a href="viclic.html"><button>Виклики та проблеми безпеки</button></a>
+        <a href="викона.html"><button>Джерела</button></a>
+    </nav>
+
+    <!-- Блоки контенту -->
+    <div class="block">
+        <h2>Виклики безпеки 5G</h2>
+        <p>5G мережі обіцяють значні покращення в швидкості та пропускній здатності, але також створюють нові проблеми для безпеки та конфіденційності. Відсутність належних заходів безпеки може призвести до серйозних загроз для критичної інфраструктури та приватних користувачів.</p>
+        <p>Ось кілька важливих викликів, з якими стикаються оператори та користувачі 5G:</p>
+        <img src="gegfkegf.jpg" alt="Ілюстрація 5G">
+    </div>
+
+    <div class="block">
+        <h2>1. Проблеми з інфраструктурою та управлінням</h2>
+        <p>5G вимагає значно більшої кількості базових станцій та обладнання для забезпечення зв'язку, що створює нові уразливості:</p>
+        <ul>
+            <li>Більш складна інфраструктура та вразливість до фізичних атак.</li>
+            <li>Інтеграція різних технологій (4G, 5G, Wi-Fi, тощо) створює нові точки входу для зловмисників.</li>
+            <li>Проблеми з управлінням трафіком, що можуть призвести до зловживання даними або витоку інформації.</li>
+        </ul>
+        <img src="ghj,ktvf.jpg" alt="Інфраструктура 5G">
+    </div>
+
+    <div class="block">
+        <h2>2. Загрози конфіденційності</h2>
+        <p>Оскільки 5G дозволяє з'єднувати мільйони пристроїв одночасно, зростає ризик для конфіденційності особистих даних. Ось деякі важливі аспекти:</p>
+        <ul>
+            <li>Потенційні витоки особистих даних через зловмисне використання інтернету речей (IoT).</li>
+            <li>Зростання використання даних в реальному часі, що може призвести до зловживань чи неправомірного доступу до персональних даних.</li>
+            <li>Використання нових частотних діапазонів створює нові ризики для відстеження та шпигунства за користувачами.</li>
+        </ul>
+        <img src="hacker.jpg" alt="Загрози для даних">
+    </div>
+
+    <div class="block">
+        <h2>3. Атаки на мережу 5G</h2>
+        <p>Незважаючи на вдосконалені заходи безпеки, мережі 5G піддаються новим видам атак:</p>
+        <ul>
+            <li><strong>Distributed Denial of Service (DDoS) атаки:</strong> Оскільки 5G забезпечує велику кількість підключених пристроїв, мережі можуть стати уразливими до атак, спрямованих на перевантаження систем.</li>
+            <li><strong>Man-in-the-middle (MITM) атаки:</strong> Потенційні вразливості у шифруванні можуть дозволити зловмисникам перехоплювати та маніпулювати переданими даними.</li>
+            <li><strong>Атаки на фізичну інфраструктуру:</strong> Оскільки мережа включає велику кількість фізичних пристроїв, вони можуть стати цілями фізичних атак, таких як саботаж або втручання в роботу базових станцій.</li>
+        </ul>
+        <img src="hacker2.jpg" alt="Атака на мережу">
+    </div>
+
+    <div class="block">
+        <h2>4. Рішення та заходи безпеки</h2>
+        <p>Щоб забезпечити надійний захист, необхідно впроваджувати комплексні заходи безпеки:</p>
+        <ul>
+            <li>Використання передових методів шифрування та аутентифікації для захисту даних.</li>
+            <li>Регулярне оновлення та моніторинг інфраструктури для своєчасного виявлення та усунення вразливостей.</li>
+            <li>Впровадження політик безпеки для всіх пристроїв, підключених до мережі 5G.</li>
+            <li>Забезпечення безпеки кінцевих пристроїв, зокрема IoT пристроїв, що підключаються до 5G.</li>
+        </ul>
+        <img src="2fack.png" alt="Заходи безпеки">
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const blocks = document.querySelectorAll('.block');
+
+    function checkVisibility() {
+        blocks.forEach(block => {
+            const rect = block.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                block.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+});
+</script>
+<footer style="background-color: #222; color: #ccc; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%; font-size: 14px;">
+    <p>Виконав: Ходорович Данііл</p>
+</footer>
+</body>
